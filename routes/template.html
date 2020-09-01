@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      margin: 15px;
+      font-size: 14px;
+    }
+
+    table td {
+      padding: 7px 5px;
+      border: 1px solid black;
+      vertical-align: bottom;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th {
+      padding: 15px 7.5px;
+      font-weight: 700;
+      border: 1px solid black;
+      vertical-align: middle;
+    }
+
+    .info {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .req {
+      margin-bottom: 25px;
+    }
+
+    .req table tr td:nth-child(1) {
+      width: 50%;
+    }
+
+    .req table tr td:nth-child(2) {
+      width: 20%;
+    }
+
+    .req table tr td:nth-child(3) {
+      width: 30%;
+    }
+
+    .client__order {
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .client__name {
+      margin-bottom: 25px;
+    }
+
+    .footer {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">
+    <p>ИП Полехин Илья Александрович</p>
+    <p>Адрес: Российская Федерация, 634034, г. Томск, ул. Ленина, д. 30, корп. 2, офис 310</p>
+  </div>
+  <div class="req">
+    <table>
+      <tr>
+        <td>ИНН 614806316842 КПП 0</td>
+        <td rowspan="2">сч. №</td>
+        <td rowspan="2">40802810032080000783</td>
+      </tr>
+      <tr>
+        <td>Получатель<div>ИП Полехин Илья Александрович<br></td>
+      </tr>
+      <tr>
+        <td rowspan="2">Банк получателя<div>филиал ПАО "УРАЛСИБ" В Г.НОВОСИБИРСК<br></td>
+        <td>БИК</td>
+        <td>045004725</td>
+      </tr>
+      <tr>
+        <td>Сч. №</td>
+        <td>30101810400000000725</td>
+      </tr>
+    </table>
+  </div>
+  <div class="client">
+    <div class="client__order">__order__</div>
+    <div class="client__name">
+      <p>Плательщик __name__</p>
+      <p>Грузополучатель __name__</p>
+    </div>
+    <div class="client-table">
+      <table>
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Наименование товара</th>
+            <th>Единица измерения</th>
+            <th>Количество</th>
+            <th>Цена</th>
+            <th>Сумма</th>
+          </tr>
+        </thead>
+        <tbody>
+        __productsTable__
+        <tr>
+          <td colspan="5" style="border: none; text-align: right; font-weight: 700;">Итого</td>
+          <td style="text-align: right;">__totalSummFormat__</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="border: none; text-align: right; font-weight: 700;">Итого НДС</td>
+          <td style="text-align: right;">0.00</td>
+        </tr>
+        <tr>
+          <td colspan="5" style="border: none; text-align: right; font-weight: 700;">Всего к оплате</td>
+          <td style="text-align: right;">__totalSummFormat__</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="client__info">
+      <p>Всего наименований __productsLength__, на сумму __totalSumm__ рублей</p>
+      <p>__totalSummLetter__ </p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Руководитель предприятия _________________________(Полехин И.А.)</p>
+    <br>
+    <p>Главный бухгалтер ________________________________(Полехин И.А.)</p>
+  </div>
+</body>
+</html>

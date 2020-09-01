@@ -1,0 +1,12 @@
+{
+  "port": 5000,
+  "jwtSecret": "",
+  "mongoUri": "",
+  "baseUrl": "http://localhost:5000",
+
+  "mailFrom": "",
+  "mailSMTP": "smtp.yandex.ru",
+  "mailPort": 465,
+  "mailUser": "",
+  "mailPass": ""
+}
